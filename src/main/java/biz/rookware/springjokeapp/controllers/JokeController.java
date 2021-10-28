@@ -13,7 +13,7 @@ import biz.rookware.springjokeapp.services.JokeService;
 @RequestMapping("/")
 public class JokeController {
     
-    private JokeService jokeService;
+    private final JokeService jokeService;
 
     @Autowired
     public JokeController(JokeService jokeService) {
